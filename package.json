@@ -38,7 +38,16 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.17"
   }
 }
+{
+  "homepage": "https://alia49.github.io/websiteDemo/",
+  "scripts": {
+    "predeploy": "npm run build && shx cp build/index.html build/404.html",
+    "deploy": "gh-pages -d build"
+  }
+}
+
