@@ -1,5 +1,8 @@
 import { useEffect, useMemo, useState } from "react";
 import IMG_6633 from './assets/IMG_6633.jpeg';
+import { FaLinkedin } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
+
 
 // Simple hash router (no extra deps)
 function useRoute(defaultRoute = "overview") {
@@ -171,7 +174,15 @@ function Overview() {
         <span className="water">Overview</span>
         <h1 className="h1">Overview</h1>
         <p className="muted">My name is Ali Altimimi, I am a software engineer in the most software engeering place in the world</p>
-        <h2 className="h2">Education</h2>
+       <div style={{ display: "flex", gap: "8px" }}>
+         <a href="https://www.linkedin.com/in/ali-altimimi/" target="_blank" rel="noreferrer">
+           <FaLinkedin size={28} color="#0A66C2" />
+           </a>
+         <a href="https://github.com/alia49" target="_blank" rel="noreferrer">
+            <FaGithub size={28} color="#fff" />
+           </a>
+       </div>
+       <h2 className="h2">Education</h2>
         <ul className="timeline">
           <li><Dot /> 2020–2022 Community College </li>
           <li><Dot /> 2023–2026 San Jose State University</li>
