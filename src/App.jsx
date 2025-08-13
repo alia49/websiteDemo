@@ -184,7 +184,6 @@ function Overview() {
        </div>
        <h2 className="h2">Education</h2>
         <ul className="timeline">
-          <li><Dot /> 2020–2022 Community College </li>
           <li><Dot /> 2023–2026 San Jose State University</li>
         </ul>
         <h2 className="h2">Occupation</h2>
