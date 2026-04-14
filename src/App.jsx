@@ -196,7 +196,7 @@ function Hero({ stats, onOverview }) {
           <h1 className="display">Ali Altimimi!</h1>
           <p className="lead">Software engineer with a B.S. in Computer Science from SJSU — passionate about building things that are fast, well-crafted, and genuinely useful. Coffee enthusiast and SJSU Software Engineering Club officer.</p>
           <div className="hero-actions">
-            <a className="btn" href="/resume.pdf" target="_blank" rel="noreferrer" download>Download Resume</a>
+            <a className="btn" href={`${process.env.PUBLIC_URL}/resume.pdf`} download="Ali_Altimimi_Resume.pdf">Download Resume</a>
             <a className="link" href="#about">Go To Overview →</a>
           </div>
           <div className="stats">
